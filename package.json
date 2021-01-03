@@ -1,0 +1,24 @@
+{
+  "name": "BW-africanMarketPlace-backEnd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kplynds/BW-africanMarketPlace-backEnd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kplynds/BW-africanMarketPlace-backEnd/issues"
+  },
+  "homepage": "https://github.com/kplynds/BW-africanMarketPlace-backEnd#readme",
+  "dependencies": {
+    "knex": "^0.21.15",
+    "sqlite3": "^5.0.0"
+  }
+}
