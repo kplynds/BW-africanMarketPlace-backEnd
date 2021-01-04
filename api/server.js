@@ -8,7 +8,7 @@ server.use(express.json())
 server.use(cors())
 
 server.get("/", (req, res) => {
-  res.status(200).json("You did it!")
+  res.status(200).json("You did it!!!")
 })
 
 server.get("/api/users", (req, res) => {
