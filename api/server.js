@@ -1,6 +1,8 @@
 const express = require("express")
 const cors = require("cors")
 
+const authRouter = require("./auth")
+
 const db = require("../data/dbConfig")
 
 const server = express()
@@ -16,5 +18,13 @@ server.get("/api/users", (req, res) => {
         res.status(200).json(data)
     })
 })
+
+server.get("/api/owners", (req, res) => {
+  db("owners").then(data => {
+      res.status(200).json(data)
+  })
+})
+
+server.use("/api", authRouter)
 
 module.exports = server
