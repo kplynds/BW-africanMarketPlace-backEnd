@@ -4,7 +4,8 @@ base URL : https://bw-african-marketplace-app.herokuapp.com/
 
 ENDPOINTS : 
 
-owners
+owners endpoints: 
+
   GET /api/owners
   description: returns all owners in the database
   
@@ -26,9 +27,8 @@ owners
     }
   description: returns token and welcome message
   
-  users
+  users endpoints:
   
-  owners
   GET /api/users
   description: returns all users in the database
   
