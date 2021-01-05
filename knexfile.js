@@ -20,6 +20,10 @@ module.exports = {
     migrations: {
       directory: "./data/migrations",
     },
+    pool: {
+      min: 2,
+      max: 10
+    },
     seeds: {
       directory: "./data/seeds",
     },
