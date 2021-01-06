@@ -2,6 +2,14 @@
 
 base URL : https://bw-african-marketplace-app.herokuapp.com/
 
+Users: 
+owner
+    username: firstOwner
+    password: password
+user 
+    username: firstUser
+    password: password
+
 ENDPOINTS
 
 OWNERS ENDPOINTS: 
