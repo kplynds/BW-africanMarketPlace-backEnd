@@ -1,7 +1,8 @@
 const router = require("express").Router();
 const db = require("../../data/dbConfig");
+const restricted = require("../restricted")
 
-router.post("/item", (req, res) => {
+router.post("/item", restricted, (req, res) => {
     const newPost = {
         owner_id: req.body.owner_id,
         item_name: req.body.name,
