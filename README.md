@@ -25,7 +25,7 @@ OWNERS ENDPOINTS:
         username: "",
         password: "",
         }
-    description: returns token and welcome message
+    description: returns token, welcome message, and id of the owner logging in (save this to local storage to use when posting a item)
   
 USERS ENDPOINTS:
   
