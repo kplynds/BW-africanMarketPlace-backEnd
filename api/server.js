@@ -2,8 +2,10 @@ const express = require("express")
 const cors = require("cors")
 
 const authRouter = require("./auth")
+const postsRouter = require("./items/items")
 
 const db = require("../data/dbConfig")
+const restricted = require("./restricted");
 
 const server = express()
 server.use(express.json())
@@ -25,6 +27,13 @@ server.get("/api/owners", (req, res) => {
   })
 })
 
+server.get("/api/items", restricted, (req, res) => {
+  db("items").then(data => {
+      res.status(200).json(data)
+  })
+})
+
 server.use("/api", authRouter)
+server.use("/api", postsRouter)
 
 module.exports = server

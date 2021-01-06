@@ -100,6 +100,7 @@ router.post("/login/owner", passwordCheckOwner, async (req, res) => {
     res.status(200).json({
       message: `welcome, ${user.owner_username}`,
       token,
+      id: user.owner_id,
     });
   } catch (error) {
     res.status(500).json({ message: error.message });
